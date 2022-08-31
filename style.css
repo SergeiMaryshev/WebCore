@@ -1,0 +1,257 @@
+@font-face {
+    font-family: 'Barlow-Regular-webfont';
+    src: url('Barlow-Regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #EFF6FF;
+     font-family: "Barlow-Regular-webfont"; 
+}
+
+button {
+    font-size: 15px;
+    font-weight: normal;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    box-sizing: content-box;
+    color: #EEEEEE;
+    text-align: center;
+    border-width: 0;
+}
+
+.registration-block {
+    width: 280px;
+    height: 20px;
+    
+}
+
+.left {
+    padding-left: 20px;
+    padding-top: 20px;
+    margin-left: 70px;
+    margin-top: 100px;
+    background-image: url("bg.jpg");
+    background-color: #FFFFFF;
+    background-repeat: no-repeat;
+    background-size: 900px;
+    width: 1800px;
+    height: 1200px;
+}
+
+.right {
+    margin-left: 1000px;
+    background-color: #FFFFFF;
+    width: 800px;
+}
+
+.logo {
+    padding-top: 30px;
+    padding-left: 30px;
+    width: 8%;
+}
+
+.button-image {
+    background-repeat: no-repeat;
+    background-size: 8%;
+    background-position-y: center;
+    background-position-x: left;
+    background-position-x: 15px;
+}
+
+.Facebook {
+    background-color: #255A9B;
+    background-image: url("facebook.svg");
+    margin-right: 40px;
+}
+
+.LinkedIn {
+    background-color: #0076B6;
+    background-image: url("linkedin.svg");
+    margin-right: 0px;
+}
+
+.button {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #3698FB;
+    border-radius: 5px;
+}
+
+.header {
+    
+    font-size: 34px;
+    font-weight: bold;
+    color: #2a4a5c;
+}
+
+.header-inner {
+    font-size: 22px;
+    font-weight: bold;
+    color: #96a5b1;
+    margin-bottom: 70px;
+}
+
+.label-input-box {
+    position: relative;
+    top: 5px;
+    left: 60px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #96a5b1;
+}
+
+.input-box {
+    height: 50px;
+    border-left-width: 3px;
+    border-top-width: 0.5px;
+    border-color:#8c99a1;
+    border-left-color:#0311d6;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-top: 10px;
+    vertical-align: top;
+    text-align: start;
+}
+
+.investor-title {
+    font-size: 26px;
+    font-weight: bold;
+    color: #7b8a92;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.investor-subtitle {
+    font-size: 17px;
+    font-weight: bold;
+    color: #96a5b1;
+    margin-bottom: 50px;
+}
+
+.investorType {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2a4a5c;
+    margin-right: 50px;
+   
+}
+.real-radio {
+    width: 0;
+	height: 0;
+	position: absolute;
+    opacity: 0;
+    z-index: -1;
+
+}
+
+.custom-radio {
+	position: relative;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: #ffffff;
+	border: 2px solid #7e9bbd;
+	border-radius: 50%;
+	vertical-align: text-top;
+	margin-right: 5px;
+}
+
+.custom-radio::before {
+	content: '';
+    vertical-align: text-bottom;
+	display: inline-block;
+	width: 11px;
+	height: 11px;
+	background: #ffffff;
+    border: #3698FB solid 7px;
+	border-radius: 50%;
+	position: relative;
+	left: 50%;
+	top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 0.25s ease-in;
+}
+
+.real-radio:checked + .custom-radio::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.real-radio:focus + .custom-radio {
+	box-shadow: 0px 0px 0px 1px #38577a, 0px 0px 10px #7e9bbd;
+}
+
+input , label , button {
+	cursor: pointer;
+}
+
+[data-tooltip] {
+    position: relative;
+}
+
+[data-tooltip]::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    opacity: 0;
+    transition: 1s;
+    pointer-events: auto;
+    width: 280px;
+    left: 0;
+    top: 30px;
+    color: #afafaf;
+    font-size: 16px;
+    padding: 1em;
+    box-shadow: 10px 15px 5px  #EEEEEE;
+    line-height: 1.5em;
+}
+
+[data-tooltip]:hover::after {
+    opacity: 1;
+    top: 2em;
+}
+
+.terms {
+    font-size: 14px;
+    font-weight: normal;
+    color: #2a4a5c;
+    margin-top: 150px;
+    margin-bottom: 70px;
+}
+
+.strike {
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: #2a4a5c;
+}
+
+.strike span {
+    position: relative;
+    display: inline-block;
+    margin: 50px;
+}
+
+.strike span::before,
+.strike span::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 100px;
+    height: 1px;
+    background-color: #afafaf;
+}
+
+.strike span::before {
+    right: 100%;
+    margin-right: 10px;
+}
+
+.strike span::after {
+    left: 100%;
+    margin-left: 10px;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="style.css" rel="stylesheet">
+    <title>Верстка 1.1</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <main>
+        <section class="left">
+            <img src="logo.svg" alt="logo" class="logo">
+            <form class="right">
+                <p class="header">Get iintoo it today</p>
+            <p class="header-inner">There is no charge or obligation upon registration.</p>
+            
+                <button class="button-image Facebook registration-block">
+                    Register with Facebook
+                </button>
+                <button class="button-image LinkedIn registration-block">
+                    Register with LinkedIn
+                </button>
+                <div class="strike">
+                    <span>OR</span>
+                </div>
+                <label for="email" class="label-input-box">Email</label>
+                <input id="email" type="email" placeholder="gus.goodwin@gmail.com" class="input-box registration-block">
+                <label for="tel" class="label-input-box">Phone</label>
+                <input id="tel" type="tel" class="input-box registration-block">
+                <p class="investor-title">What type of investor are you?</p>
+                <p class="investor-subtitle">Select the type of investor you are below.</p>
+                <label class="investorType"><input type="radio" class="real-radio" name="type of investor" value="Individual" checked>
+                    <span class="custom-radio"></span>
+                    Individual<b class="investor-subtitle" data-tooltip="I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common"> &#9432</b>
+                </label>
+                <label class="investorType"><input type="radio" class="real-radio" name="type of investor" value="Business">
+                    <span class="custom-radio"></span>
+                    Business<span class="investor-subtitle"> &#9432</span>
+                </label>
+                <label class="investorType"><input type="radio" class="real-radio" name="type of investor" value="IRA">
+                    <span class="custom-radio"></span>
+                    IRA<span class="investor-subtitle" > &#9432</span>
+                </label>
+                <label class="investorType"><input type="radio" class="real-radio" name="type of investor" value="Trust">
+                    <span class="custom-radio"></span>
+                    Trust<span class="investor-subtitle"> &#9432</span>
+                </label>
+                <p class="terms">
+                    <label>
+                        <input type="checkbox" name="terms">
+                        I agree to the terms and receiving notifications from iintoo <a href="terms.txt">View full
+                            terms</a>
+                    </label>
+
+                </p>
+                <p>
+                    <button class="button registration-block">
+                        Create Account
+                    </button>
+                </p>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
